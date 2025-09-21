@@ -1,4 +1,5 @@
-# directory structure
+# Directory structure
+## Below is the directory structure
  ```
   dataset
     |-original_data
