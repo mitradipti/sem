@@ -1,4 +1,4 @@
-# Directory structure
+# Directory Structure
 ## Below is the directory structure
  ```
   dataset
