@@ -11,3 +11,13 @@
        |- 0_2.png
        |-...
 ```
+
+# Required Libraries
+## 1. Pytorch 
+    pip install torch torchvision
+## 2. Transformers
+     pip install transformers
+## 3. Pillow
+    pip install pillow
+## 4. NumPy
+    pip install numpy
