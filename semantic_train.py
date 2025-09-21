@@ -40,7 +40,7 @@ class SegmentationDataset(Dataset):
 # dataset Paths
 images_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\original_data" # Put original_data path 
 masks_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\semantic_annotations_mask" # Put semantic_annotations_mask path
-num_classes = 10  # Set this to your number of classes
+num_classes = 10  
 
 # Load feature extractor and model
 feature_extractor = SegformerFeatureExtractor.from_pretrained("nvidia/segformer-b5-finetuned-ade-640-640")
@@ -78,4 +78,5 @@ for epoch in range(10):  # Set your number of epochs
 model.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path (here segformer_finetuned_trained is a file name. After training, it will be saved as segformer_finetuned_trained.pth file)
 
 feature_extractor.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path
+
 
