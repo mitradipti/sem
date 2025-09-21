@@ -75,6 +75,7 @@ for epoch in range(10):  # Set your number of epochs
     print(f"Epoch {epoch+1}: Loss {loss.item():.4f}")
 
 # Save the fine-tuned model
-model.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path
+model.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path (here segformer_finetuned_trained is a file name. After training, it will be saved as segformer_finetuned_trained.pth file)
 
 feature_extractor.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path
+
