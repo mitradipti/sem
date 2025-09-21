@@ -21,3 +21,7 @@
     pip install pillow
 ## 4. NumPy
     pip install numpy
+
+
+# Train
+### The semantic_train.py file needs to be trained, and it is uploaded in the link. Need to adjust the path when running the code.
