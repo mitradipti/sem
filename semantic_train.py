@@ -37,9 +37,9 @@ class SegmentationDataset(Dataset):
 
         return inputs, torch.tensor(mask, dtype=torch.long)
 
-# Paths
-images_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\original_data"
-masks_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\semantic_annotations_mask"
+# dataset Paths
+images_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\original_data" # Put original_data path 
+masks_dir = r"C:\Users\oishi\Documents\pm2.5\semantic_seg\dataset\semantic_annotations_mask" # Put semantic_annotations_mask path
 num_classes = 10  # Set this to your number of classes
 
 # Load feature extractor and model
@@ -75,5 +75,6 @@ for epoch in range(10):  # Set your number of epochs
     print(f"Epoch {epoch+1}: Loss {loss.item():.4f}")
 
 # Save the fine-tuned model
-model.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained")
-feature_extractor.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained")
+model.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path
+
+feature_extractor.save_pretrained(r"C:\Users\oishi\Documents\pm2.5\segformer_finetuned_trained") # Adjust the path
